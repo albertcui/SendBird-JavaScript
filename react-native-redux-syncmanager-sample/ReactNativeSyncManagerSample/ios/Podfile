@@ -38,6 +38,11 @@ target 'ReactNativeSyncManagerSample' do
   pod 'Firebase/Messaging'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+  pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary.podspec"
+
   target 'ReactNativeSyncManagerSampleTests' do
     inherit! :search_paths
     # Pods for testing
